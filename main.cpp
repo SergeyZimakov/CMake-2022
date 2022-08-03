@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string.h>
 #include <string>
 #include <cctype>
 using namespace std;

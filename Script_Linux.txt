@@ -4,5 +4,11 @@ cd build
 cmake ..
 cmake --build .
 
+If You get an error:
+1. Open Linux Terminal
+2. Run - sudo apt-get update
+3. Run - sudo apt-get install build-essential
+4. Run again Build commands
+
 RUN:
 ./stringModifier
