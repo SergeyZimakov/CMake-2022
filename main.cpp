@@ -20,7 +20,7 @@ int main(int, char**) {
         cout << "\nDo You want to enter another string?(y/N) ";
         getline(cin, userAnswer);
     }
-    cout << "\nThank You";
+    cout << "\nThank You\n";
     
     return 0;
 }
