@@ -16,8 +16,13 @@ jobs:
       - name: Create build folder
         run: mkdir build
         
+      - name: Build Project With Cmake
+        run: |
+          cd build
+          cmake ..
+          cmake --build .
       
           
       - name: Show Files
-        run: ls - la
+        run: ls -a
           
