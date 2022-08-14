@@ -13,14 +13,14 @@ jobs:
       - name: Clone Repo
         uses: actions/checkout@v3
 
-      - name: Create build folder
-        run: mkdir build
+      # - name: Create build folder
+      #   run: mkdir build
         
-      - name: Build Project With Cmake
-        run: |
-          cd build
-          cmake ..
-          cmake --build .
+      # - name: Build Project With Cmake
+      #   run: |
+      #     cd build
+      #     cmake ..
+      #     cmake --build .
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -35,6 +35,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
+          context: .
+          file: ./Dockerfile
           push: true
           tags: user/app:latest
       
