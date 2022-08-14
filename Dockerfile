@@ -14,6 +14,6 @@ RUN ls -a
 # RUN cmake ..
 # RUN cmake --build .
 
-CMD ["./stringModifier"]
+CMD ["./build/stringModifier"]
 
 
