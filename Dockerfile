@@ -6,10 +6,10 @@ RUN apt-get install cmake -y
 WORKDIR /docker_app
 COPY . .
 
-RUN mkdir build
-RUN cd build
-RUN cmake ..
-RUN cmake --build .
+# RUN mkdir build
+# RUN cd build
+# RUN cmake ..
+# RUN cmake --build .
 
 CMD ["./stringModifier"]
 
