@@ -12,7 +12,7 @@ RUN ls -a
 
 RUN mkdir build
 RUN ls -a
-RUN cd ./build
+WORKDIR /docker_app/build
 RUN ls -a
 RUN cmake ..
 RUN cmake --build .
