@@ -12,11 +12,11 @@ RUN ls -a
 
 RUN mkdir build
 RUN ls -a
-RUN cd build
+RUN cd ./build
 RUN ls -a
 RUN cmake ..
 RUN cmake --build .
 
-ENTRYPOINT ["./stringModifier"]
+ENTRYPOINT ["./build/stringModifier"]
 
 
