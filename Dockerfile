@@ -7,6 +7,8 @@ RUN mkdir docker_app
 COPY . ./docker_app
 WORKDIR /docker_app
 
+RUN ls -a
+
 # RUN mkdir build
 # RUN cd build
 # RUN cmake ..
