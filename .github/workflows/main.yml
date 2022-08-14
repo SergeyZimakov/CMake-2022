@@ -38,7 +38,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: user/app:latest
+          tags: string_modifier_docker:latest
       
           
       - name: Show Files
