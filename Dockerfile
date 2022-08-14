@@ -4,11 +4,16 @@ RUN apt-get update -y
 RUN apt-get install cmake -y
 
 RUN mkdir docker_app
+RUN ls -a
 COPY . ./docker_app
+RUN ls -a
 WORKDIR /docker_app
+RUN ls -a
 
 RUN mkdir build
+RUN ls -a
 RUN cd build
+RUN ls -a
 RUN cmake ..
 RUN cmake --build .
 
