@@ -6,6 +6,6 @@ RUN mkdir docker_app
 COPY ./build ./docker_app
 WORKDIR /docker_app
 
-CMD ["./stringModifier"]
+ENTRYPOINT ["./stringModifier"]
 
 
