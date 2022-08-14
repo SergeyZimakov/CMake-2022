@@ -34,4 +34,7 @@ jobs:
 
       - name: Build With Docker
         run: docker build -t mydocker .
+
+      - name: Show Files
+        run: ls -a
           
