@@ -18,6 +18,6 @@ RUN ls -a
 RUN cmake ..
 RUN cmake --build .
 
-ENTRYPOINT ["./build/stringModifier"]
+ENTRYPOINT ["./stringModifier"]
 
 
