@@ -1,18 +1,21 @@
-Read it if you want to run the programm in cmd/linux terminal.
+Second Part Of Assignment
 
-If you using Windows, you can run the programm in cmd:
-	1. Enter the folder "Auto Run For Windows".
-	2. Open "build" file.
-	3. Open "run" file.
+1. I added the bash file that runs the app in linux terminal. The file "Run.sh" based in "Auto Run For Linux" folder.
 
-If you using Linux and want to run the programm from Linux Terminal, you can do the following steps to open .bat files:
-	Step 1: Install Wine:
-		Open your Terminal Ctrl+Alt+T or search for it once inside your terminal type (sudo apt-get install wine)
-	-----------------------------------------------------------
-	Step 2: Run the Wine windows CMD
-		After installing wine you want to type in the terminal (wine cmd)
-	-----------------------------------------------------------
-	Step 3: Run the .bat
-		While inside the wine cmd you want to change the directory so type (cd /home/username/the location of the file)			
-		then type (start thefile.bat)
-Open "build" file and then "run" file in that way from "Auto Run For Windows" folder.
+2. CI/CD process based in "./.github/workflows/main.yml".
+	* The file describes automated proccess and occures on push and pull_request of main branch.
+	* The proccess executes image build in docker.
+
+3. Dockerfile in root of project contains the instructions for image build.
+
+4. For running the app from image open the terminal in linux and run following commands:
+	
+	- sudo apt install docker.io (optional if docker.io does not installed on your machine)
+
+	- sudo docker pull sergeyzimakov/string_modifier_docker:latest
+
+	- sudo docker run --name stringapp -it --rm sergeyzimakov/string_modifier_docker:latest
+
+5. To stop the running run:
+	
+	-sudo docker stop stringapp
