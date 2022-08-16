@@ -16,6 +16,10 @@ Second Part Of Assignment
 
 	- sudo docker run --name stringapp -it --rm sergeyzimakov/string_modifier_docker:latest
 
-5. To stop the running run:
-	
-	-sudo docker stop stringapp
+5. To get the image as tar.gz file run following command:
+
+	- mkdir FOLDER_NAME
+
+	- cd FOLDER_NAME
+
+	- sudo docker save sergeyzimakov/string_modifier_docker:latest | gzip > myimage.tar.gz
