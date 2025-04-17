@@ -1,8 +1,10 @@
-Second Part Of Assignment
+# CMake project
 
-1. I added the bash file that runs the app in linux terminal. The file "Run.sh" based in "Auto Run For Linux" folder.
+## The main purpose of project is to learn how to deploy simple CPP app using CI/CD Actions, CMake, Docker
 
-2. CI/CD process based in "./.github/workflows/main.yml".
+1. The bash file "Run.sh" placed in "Auto Run For Linux" folder runs the app in linux terminal
+
+2. CI/CD process described in "./.github/workflows/main.yml".
 	* The file describes automated proccess and occures on push and pull_request of main branch.
 	* The proccess executes image build in docker.
 
